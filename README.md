@@ -14,7 +14,7 @@ Maine ek Flask App ke liye complete CI/CD Pipeline banaya hai. Jab bhi main code
 
 ## 🛠️ Tech Stack Used
 - **Language:** Python 3.11
-- **Framework:** Flask 3.0.0
+- **Framework:** Flask 2.3.3
 - **Container:** Docker
 - **CI/CD:** GitHub Actions
 - **Server:** Ubuntu
