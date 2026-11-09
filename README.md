@@ -1,12 +1,4 @@
-# 🚀 End-to-End CI/CD Pipeline Deployment
-
-![GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-green)
-![Docker](https://img.shields.io/badge/Docker-Ready-blue)
-![Python](https://img.shields.io/badge/Python-3.11-yellow)
-![Flask](https://img.shields.io/badge/Flask-2.3.3-red)
-
-## 📌 Project Overview
-Maine ek Flask App ke liye complete CI/CD Pipeline banaya hai. Jab bhi main code push karta hu, GitHub Actions automatically test karke Docker image build karta hai.
+I built a complete CI/CD Pipeline for a Flask App. Whenever I push code, GitHub Actions automatically tests it and builds a Docker image.
 
 **Live Status:** ✅ Pipeline GREEN
 
@@ -20,14 +12,13 @@ Maine ek Flask App ke liye complete CI/CD Pipeline banaya hai. Jab bhi main code
 - **Server:** Ubuntu
 
 ## ⚙️ How CI/CD Works? (End-to-End Flow)
-
-1.  **Code Push:** Developer code likh ke GitHub pe push karta hai
-2.  **Trigger:** `.github/workflows/deploy.yml` automatically start ho jata hai
-3.  **Checkout:** GitHub Actions code ko checkout karta hai
-4.  **Setup Python:** Python 3.11 setup hota hai
-5.  **Install & Test:** Requirements install hote hai aur test run hota hai
-6.  **Docker Build:** Dockerfile se Docker Image build hota hai
-7.  **Success:** Sab pass hone pe Green Tick ✅ milta hai
+1.  **Code Push:** Developer writes code and pushes it to GitHub
+2.  **Trigger:** `.github/workflows/deploy.yml` starts automatically
+3.  **Checkout:** GitHub Actions checks out the code
+4.  **Setup Python:** Python 3.11 is set up
+5.  **Install & Test:** Requirements are installed and tests are run
+6.  **Docker Build:** Docker Image is built from the Dockerfile
+7.  **Success:** If everything passes, we get a Green Tick ✅
 
 ## 📁 Project Structure
 
@@ -38,6 +29,7 @@ cicd-pipeline_Deployment/
 └── .github/
     └── workflows/
         └── deploy.yml
+        
 ## 🐛 Errors I Fixed (Real Learning)
 I faced 3 major errors in this project, which I fixed myself:
 
